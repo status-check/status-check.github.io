@@ -1,1 +1,115 @@
- 
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta charset="UTF-8">
+<title>Status wird geprüft...</title>
+<style type="text/css">
+html { overflow:hidden; }
+html,body { margin:0; padding:0; background-color: #ffffff; }
+body { text-align:center; font-family: Arial, sans-serif; }
+#eu {
+	background-position:center 0px; 
+	background-image:url(eu.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	height:300px;
+	width:100%;
+}
+
+#wrapper {
+	display:none;
+	background-color:#ffffff;
+	border-radius:20px;
+	margin:-180px auto 0 auto;
+	padding:20px;
+	border:2px solid #cccccc;
+	width:80%;
+	box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.38);
+}
+
+#shield {
+	background-image:url(shield.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:260px;
+	height:260px;
+	margin:-30px auto 0;
+}
+
+#card {
+	min-height:200px;
+	text-align:left;
+	vertical-align:middle;
+	color:#000000;
+	font-size:16px;
+	text-align:left;
+	margin:-10px auto 20px auto;
+	padding:0 10px;
+}
+table {
+	width:100%
+}
+
+h1 {
+	font-size:20px;
+}
+
+p {
+	font-size:14px;
+	padding-bottom:10px;
+}
+
+p img {
+	float:left;
+	margin-right:13px;
+}
+p.condition {
+	padding:10px 0 10px 0;
+	font-size:14px;
+}
+</style>
+<script src="jquery.js"></script>
+
+</head>
+<body>
+<div id="eu"></div>
+
+<div id="wrapper">
+	<div id="shield"></div>
+	<div id="card">
+		<h1><span class="rev">*gitlüg takifitreZ</span></h1>
+		<p><strong class="rev">:mutaD / .rnnegrahC</strong> <span class="rev">1202.5.82 - 559DX</span></p>
+		<p><span class="rev">menie tim netaD edneglof tztej eiS nehcielG</span><br>
+		<span class="rev">.ba nosreP netfürpeg red tnemukodsiewsuA</span></p>
+
+		<p><img width="32" height="32" src="user.png" style="float:left"><strong class="rev">yawolloH nhoJ divaD</strong><br>		
+		<span class="rev">3891.21.32 ma nerobeG</span>
+		</p>
+		
+		<p class="condition rev">rov tgeil takifitrezfpmI redo -neneseneG *</p>
+	</div>
+</div>
+
+
+<script>
+function reverse(s){
+    return s.split("").reverse().join("");
+}
+
+jQuery(document).ready(function(){
+	jQuery('.rev').each(function(i, elem){
+		elem.innerHTML = reverse(elem.innerHTML);
+	});
+
+	setTimeout(function(){
+		jQuery("#wrapper").fadeIn(300);
+	}, 100);
+	
+	setTimeout(function(){
+		document.title = reverse("*gitlüg takifitreZ");	
+	},800);
+});
+</script>
+</body>
+</html>
